@@ -1,6 +1,6 @@
 const mysql = require("mysql2");
 const debug = require("debug")("app:DB");
-const config = require("../config/configuration");
+const config = require("../config");
 
 const dbconf = {
   host: config.mysql.host,
@@ -20,7 +20,7 @@ function handleConnection() {
       debug(error);
       setTimeout(handleConnection, 2000);
     } else {
-      debug("DB Connected");
+      console.log("DB Connected");
     }
   });
 
