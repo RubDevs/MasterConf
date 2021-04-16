@@ -7,10 +7,14 @@ const router = express.Router();
 router.get("/", get);
 
 //Internal middleware
-function get(req, res, next) {
+async function get(req, res, next) {
   Controller.get()
-    .then((conference) => {
-      response.success(req, res, conference, 200);
+    .then(async (conference) => {
+      let result = {
+        ...conference,
+      };
+      result["sponsors"] = await Controller.getAll("sponsors");
+      response.success(req, res, result, 200);
     })
     .catch(next);
 }

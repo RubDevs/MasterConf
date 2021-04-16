@@ -9,8 +9,13 @@ module.exports = function (injectedStore) {
     return store.get(TABLE, "name", conferenceName);
   }
 
+  async function getAll(table) {
+    return store.getAll(table);
+  }
+
   //Exposed functions
   return {
     get,
+    getAll,
   };
 };
