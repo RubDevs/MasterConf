@@ -8,8 +8,8 @@ if (config.dev) {
   //Dummy when development
   store = require("../../store/dummy");
 } else {
-  //Mysql when production
-  store = require("../../store/mysql");
+  //Sqlite when production
+  store = require("../../store/sqlite");
 }
 
 //Dependecy Injection
