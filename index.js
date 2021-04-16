@@ -18,6 +18,6 @@ app.use("/hotel", hotel);
 app.use("/food", food);
 app.use(errors);
 
-app.listen(config.api.port, () => {
+app.listen(process.env.PORT || config.api.port, () => {
   console.log("API listening on port: ", config.api.port);
 });
