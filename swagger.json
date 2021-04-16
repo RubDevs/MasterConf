@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "The MasterConf API",
+    "version": "1.0.0",
+    "title": "MasterConf API"
+  },
+  "host": "masterconf.herokuapp.com",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "/",
+      "description": "Operations about main conference"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Conference"
+        ],
+        "summary": "List conference main information",
+        "operationId": "ConferenceInfo",
+        "responses": {
+          "default": {
+            "description": "Conference info"
+          }
+        }
+      }
+    },
+    "/location": {
+      "get": {
+        "tags": [
+          "Conference location"
+        ],
+        "summary": "List location and contact information",
+        "operationId": "ConferenceLocation",
+        "responses": {
+          "default": {
+            "description": "Location info"
+          }
+        }
+      }
+    },
+    "/food": {
+      "get": {
+        "tags": [
+          "Restaurants nearby"
+        ],
+        "summary": "List restaurants nearby the conference",
+        "operationId": "RestaurantsList",
+        "responses": {
+          "default": {
+            "description": "List restaurants"
+          }
+        }
+      }
+    },
+    "/hotel": {
+      "get": {
+        "tags": [
+          "Hotels nearby"
+        ],
+        "summary": "List hotels nearby the conference",
+        "operationId": "HotelsList",
+        "responses": {
+          "default": {
+            "description": "List hotels"
+          }
+        }
+      }
+    }
+  }
+}
