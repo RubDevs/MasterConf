@@ -2,6 +2,7 @@ exports.success = function (req, res, message, status) {
   let statusCode = status || 200;
   let statusMessage = message || "";
 
+  res.header("Access-Control-Allow-Origin", "*");
   res.status(statusCode).send({
     error: false,
     status: status,
