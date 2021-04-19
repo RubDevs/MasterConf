@@ -1,3 +1,27 @@
+[![MasterCONF7](https://raw.githubusercontent.com/Mono-Gato/MasterCONF7/main/md/Readme.md.jpg "MasterCONF7")](https://masterconf7.herokuapp.com/ "MasterCONF7")
+
+>See **MasterConf7** at https://masterconf7.herokuapp.com/
+To test the **API** go to https://masterconf.herokuapp.com/.
+
+# What is MasterCONF7?
+MasterCONF7 is the first project of the PlatziMaster Cohort 7 program, the team is made up of Juan David Niño FrontEnd Developer [**@Mono-Gato**](https://github.com/Mono-Gato "@Mono-Gato") and Ruben Hernandez BackEnd Developer [**@RubDevs**](http://https//github.com/RubDevs "@RubDevs") supervised by MasterCoach Joshua Pedraza [**@JoshuaPCruz**](http://https//github.com/JoshuaPCruz "@JoshuaPCruz")
+
+------------
+
+
+
+#### The Brief:
+**Overview**
+The organizers of a new Platzi conference are looking for a website that breaks down all of the information for their event. This is important, because it helps to get
+people interested in the event, but also figure out how to actually enjoy the event.
+
+See full brief [**here**](http://https//github.com/Mono-Gato/MasterCONF7/blob/main/md/Conference_Schedule_A.pdf "PDF")
+
+>Learn more about multi-page website at https://github.com/Mono-Gato/MasterCONF7
+Learn more about the API at https://github.com/RubDevs/MasterConf
+
+------------
+
 # MasterConf API
 > API that provides details and information about Masterconf7.
 
@@ -12,7 +36,7 @@ See MasterConf7 at [https://masterconf7.herokuapp.com](https://masterconf7.herok
 
 ## Usage example
 
-To test the API got to [https://masterconf.herokuapp.com](https://masterconf.herokuapp.com).
+To test the API go to [https://masterconf.herokuapp.com](https://masterconf.herokuapp.com).
 
 ## GET to /
 
